@@ -1,0 +1,20 @@
+article{
+  display: flex;
+  flex-direction: column;
+  order:2;
+  margin-top: 340px;
+}
+
+@media only screen and (min-width: 1000px){
+  article{
+    height: 100%;
+    width: 40%;
+    margin-left: 58%;
+    margin-top: 0px;
+  }
+}
+
+@import 'list';
+@import 'search';
+@import 'about';
+

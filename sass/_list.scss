@@ -1,0 +1,173 @@
+$price_color: #077510;
+$rating_color: #aab333;
+$no_results: #da0e0e;
+
+.list{
+  order:3;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+@mixin list_img($img_size){
+  min-width: $img_size;
+  min-height: $img_size;
+  max-width: $img_size;
+  max-height: $img_size;
+}
+
+.list img{
+  @include list_img(100px);
+  margin-right: 5px;
+}
+
+.list > li{
+  list-style: none;
+  margin-bottom: 5px;
+  border-bottom: 1px black dotted; 
+}
+
+.list > li:last-child{
+  border-bottom: 0px;
+}
+
+.list p{
+  margin: 3px 0 0;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info > p:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $title_font;
+}
+
+.info_img{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 15px 5px;
+}
+
+.price{
+  color: $price_color;
+}
+
+.rating{
+  color: $rating_color;
+}
+
+.no_results_list{
+  margin-top: -15px !important;
+  text-align: center;
+  color: $no_results;
+}
+
+@media only screen and (min-width: 400px){
+  .list > li{
+    width: 400px;
+    margin: 5px auto 0;
+  }
+
+  .info_img{
+    margin: 10px auto 15px;
+    justify-content: space-around;
+  }
+  
+}
+
+@media only screen and (min-width: 500px){
+  .list > li{
+    width: 500px;
+  }
+  
+  .list img{
+    @include list_img(150px);
+  }
+
+  .list p{
+    line-height: 1.4em;
+  }
+
+  .info > p:first-child{
+    font-size: 25px;
+  }
+
+  .info_img{
+    margin: 20px auto 25px;
+  }
+
+}
+
+@media only screen and (min-width: 700px){
+  .list > li{
+    width: 600px;
+  }
+  
+  .list img{
+    @include list_img(200px);
+  }
+
+  .info{
+    margin: auto;
+  }
+
+  .info > p:first-child{
+    font-size: 30px;
+  }
+
+  .info_img{
+    margin: 25px auto 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .list > li{
+    width: 400px;
+  }
+  
+  .list img{
+    @include list_img(100px);
+  }
+
+  .list p{
+    line-height: normal;
+  }
+
+  .info > p:first-child{
+    font-size: 16px;
+  }
+
+  .info_img{
+    margin: 10px auto 15px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1300px){
+  .list > li{
+    width: 500px;
+  }
+  
+  .list img{
+    @include list_img(150px);
+  }
+
+  .list p{
+    line-height: 1.4em;
+  }
+
+  .info > p:first-child{
+    font-size: 25px;
+  }
+
+  .info_img{
+    margin: 20px auto 25px;
+  }
+
+}

@@ -1,0 +1,234 @@
+html, body, section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Cabin", Sans-Serif; }
+
+section {
+  display: flex !important;
+  flex-direction: column; }
+
+@media only screen and (min-width: 500px) {
+  html, body, section {
+    font-size: 20px; } }
+@media only screen and (min-width: 700px) {
+  html, body, section {
+    font-size: 23px; } }
+@media only screen and (min-width: 1000px) {
+  html, body, section {
+    font-size: 16px; }
+
+  section {
+    flex-direction: row; } }
+#map {
+  height: 330px;
+  width: 100%;
+  order: 1;
+  position: fixed !important; }
+
+@media only screen and (min-width: 1000px) {
+  #map {
+    height: 100%;
+    width: 55%; } }
+article {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  margin-top: 340px; }
+
+@media only screen and (min-width: 1000px) {
+  article {
+    height: 100%;
+    width: 40%;
+    margin-left: 58%;
+    margin-top: 0px; } }
+.list {
+  order: 3;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column; }
+
+.list img {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 5px; }
+
+.list > li {
+  list-style: none;
+  margin-bottom: 5px;
+  border-bottom: 1px black dotted; }
+
+.list > li:last-child {
+  border-bottom: 0px; }
+
+.list p {
+  margin: 3px 0 0; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.info > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", Sans-Serif; }
+
+.info_img {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 15px 5px; }
+
+.price {
+  color: #077510; }
+
+.rating {
+  color: #aab333; }
+
+.no_results_list {
+  margin-top: -15px !important;
+  text-align: center;
+  color: #da0e0e; }
+
+@media only screen and (min-width: 400px) {
+  .list > li {
+    width: 400px;
+    margin: 5px auto 0; }
+
+  .info_img {
+    margin: 10px auto 15px;
+    justify-content: space-around; } }
+@media only screen and (min-width: 500px) {
+  .list > li {
+    width: 500px; }
+
+  .list img {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px; }
+
+  .list p {
+    line-height: 1.4em; }
+
+  .info > p:first-child {
+    font-size: 25px; }
+
+  .info_img {
+    margin: 20px auto 25px; } }
+@media only screen and (min-width: 700px) {
+  .list > li {
+    width: 600px; }
+
+  .list img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px; }
+
+  .info {
+    margin: auto; }
+
+  .info > p:first-child {
+    font-size: 30px; }
+
+  .info_img {
+    margin: 25px auto 30px; } }
+@media only screen and (min-width: 1000px) {
+  .list > li {
+    width: 400px; }
+
+  .list img {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px; }
+
+  .list p {
+    line-height: normal; }
+
+  .info > p:first-child {
+    font-size: 16px; }
+
+  .info_img {
+    margin: 10px auto 15px; } }
+@media only screen and (min-width: 1300px) {
+  .list > li {
+    width: 500px; }
+
+  .list img {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px; }
+
+  .list p {
+    line-height: 1.4em; }
+
+  .info > p:first-child {
+    font-size: 25px; }
+
+  .info_img {
+    margin: 20px auto 25px; } }
+.search {
+  order: 2;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; }
+
+.search_input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px black solid;
+  margin-bottom: 5px;
+  width: 200px;
+  margin: 0 auto 15px;
+  text-align: center; }
+
+.search > button {
+  width: 150px;
+  height: 35px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #1f75cc;
+  color: white; }
+
+@media only screen and (min-width: 500px) {
+  .search_input {
+    width: 275px; } }
+@media only screen and (min-width: 1000px) {
+  .search_input {
+    width: 200px; } }
+@media only screen and (min-width: 1300px) {
+  .search_input {
+    width: 275px; } }
+@media only screen and (min-height: 600px) {
+  .search_input {
+    margin: 0 auto 40px; } }
+.about {
+  order: 1;
+  text-align: center; }
+
+.about > h1 {
+  font-family: "Roboto Condensed", Sans-Serif;
+  color: #1f75cc; }
+
+@media only screen and (min-width: 500px) {
+  .about > h1 {
+    font-size: 40px; } }
+@media only screen and (min-width: 700px) {
+  .about > h1 {
+    font-size: 45px; } }
+@media only screen and (min-width: 1000px) {
+  .about > h1 {
+    font-size: 40px; } }
+@media only screen and (min-width: 1300px) {
+  .about > h1 {
+    font-size: 45px; } }
+
+/*# sourceMappingURL=index.css.map */

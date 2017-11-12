@@ -1,0 +1,42 @@
+$title_font: 'Roboto Condensed', Sans-Serif;
+$title_color: #1f75cc;
+$content_font: 'Cabin', Sans-Serif;
+
+html,body, section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $content_font;
+}
+
+section {
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 500px){
+  html, body, section{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  html, body, section{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  html, body, section{
+    font-size: 16px;
+  }
+  
+  section{
+    flex-direction: row;
+  }
+}
+
+@import 'maps';
+@import 'notMaps';

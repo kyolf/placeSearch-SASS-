@@ -1,0 +1,34 @@
+.about{
+  order:1;
+  text-align: center;
+}
+
+.about > h1{
+  font-family: $title_font;
+  color: $title_color;
+}
+
+
+@media only screen and (min-width: 500px){
+  .about > h1{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .about > h1{
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .about > h1{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .about > h1{
+    font-size: 45px;
+  }
+}
